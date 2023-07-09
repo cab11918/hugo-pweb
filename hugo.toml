@@ -1,0 +1,33 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'hugo-book'
+DefaultContentLanguage = "zh"
+
+[languages]
+
+  [languages.en]
+
+    title = "Minghao Yu"
+
+    languageName = "English"
+
+    weight = 1
+    contentDir = 'content.en'
+
+
+  [languages.zh]
+
+    title = "余名皓"
+
+    languageName = "中文"
+
+    weight = 2
+    contentDir = 'content.zh'
+
+[params]
+
+  BookTheme = 'auto'
+
+  BookSearch = false
+

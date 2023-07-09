@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "83bb3b79526389ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "70beb42973dd1942",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ae5378029a7bac9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bdd5a6be3c4a7963",
+    "type": "split",
+    "children": [
+      {
+        "id": "d241e31b4a15a112",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b9904d3f8a5d5aa3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1a33681935669e6b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9bdd5549971fc489",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "617a31470eca9562",
+    "type": "split",
+    "children": [
+      {
+        "id": "7cae411be1a155e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d0c732f1382af3a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bd702af98127e5c9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1bd37ca4332e0156",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "efe25e574ddad3e1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_index.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7ae5378029a7bac9",
+  "lastOpenFiles": [
+    "docs.en/Projects/_index.md",
+    "docs.en/Notes/_index.md",
+    "docs.en/Ideas/_index.md",
+    "docs/_index copy.md",
+    "docs/_index.en.md",
+    "docs.en/Ideas/_index.en.md",
+    "docs.en/Notes/_index.en.md",
+    "docs.en/Projects/_index.en.md",
+    "docs.en/Projects/2.md",
+    "docs.en/Projects",
+    "docs.en/Notes/2.md",
+    "docs.en/Notes",
+    "docs.en/Ideas/2.md",
+    "docs.en/Ideas",
+    "docs.en/想法及创作.en/_index.md",
+    "docs.en/想法及创作.en/2.md",
+    "docs.en/想法及创作.en",
+    "docs.en/_index.en.md",
+    "docs.en/项目/_index.md",
+    "docs.en/项目/2.md",
+    "docs.en/笔记/_index.md",
+    "docs.en/笔记/2.md",
+    "docs.en/想法及创作/_index.md",
+    "docs.en/想法及创作/2.md",
+    "docs.en/项目",
+    "docs.en/笔记",
+    "docs.en/_index.md",
+    "docs.en/想法及创作",
+    "docs.en",
+    "docs copy/_index.md",
+    "docs copy/想法及创作/_index.md",
+    "docs copy/想法及创作/2.md",
+    "docs copy/想法及创作",
+    "docs copy/项目/_index.md",
+    "docs copy/项目/2.md",
+    "docs copy/项目"
+  ]
+}
