@@ -74,6 +74,8 @@ I'm interested in human-computer interaction and front-end development. I enjoy 
 - Developed front-end interface and functionalities for the Billing System.
 - Developed front-end interface and functionalities for the Chest Imaging Assistant Diagnostic System.
 
+## Contact
+
 ---
 
 *📮 906924612@qq.com · 📞 +86 17386042684*
