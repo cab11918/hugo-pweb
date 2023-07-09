@@ -1,9 +1,10 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://cab11918.github.io/hugo-pweb/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Minghao Yu'
 theme = 'hugo-book'
 DefaultContentLanguage = "zh"
 canonifyURLs = true
+
 [languages]
 
   [languages.en]
