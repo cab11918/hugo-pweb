@@ -3,10 +3,6 @@ title: About Me
 type: docs
 ---
 
-
-
-*📮 906924612@qq.com · 📞 +86 17386042684*
-
 ## About
 
 ---
@@ -79,6 +75,8 @@ I'm interested in human-computer interaction and front-end development. I enjoy 
 - Developed front-end interface and functionalities for the Chest Imaging Assistant Diagnostic System.
 
 ---
+
+*📮 906924612@qq.com · 📞 +86 17386042684*
 
 → **[Github](https://www.github.com/cab11918)**
 
