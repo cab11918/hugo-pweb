@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minghao Yu</title>
+    <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/</link>
+    <description>Recent content on Minghao Yu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://cab11918.github.io/hugo-pweb/en/docs/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Animation Editor</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/java-animation-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/java-animation-editor/</guid>
+      <description> Java Animation Editor # This is a Java project developed in an object-oriented design course. It accepts string inputs and visualizes the code as an interesting animation. It supports features such as exporting to SVG format, slowing down/speeding up the animation, and pausing/starting/replaying the animation.
+The main UI Users can add and remove shapes in the animation and describe their motion paths. (delete successful) Tower of Hanoi Animation Demonstration </description>
+    </item>
+    <item>
+      <title>Java Chinese Chess</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/java-chinese-chess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/java-chinese-chess/</guid>
+      <description>Java Chinese Chess # The Java game was developed after completing the object-oriented design course. It is a two-player game that applies all the rules of traditional Chinese chess. There are plans to add a player-versus-artificial intelligence feature in future versions.</description>
+    </item>
+    <item>
+      <title>Python Dungeon Game Snarl</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/python-game-snarl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/python-game-snarl/</guid>
+      <description>Python Dungeon Game Snarl # This is a 2D multiplayer online game developed using Python, with PyGame as the frontend framework. The game incorporates TCP sockets for communication between the client and server for the online functionality. The game architecture utilizes multiple threads to handle communication with the server separately from the GUI user interface. In the game, players are tasked with finding keys in different levels to progress to the next level.</description>
+    </item>
+    <item>
+      <title>React Music Player</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/react-music-player/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/react-music-player/</guid>
+      <description>React Music Player # Web App developed based on React JS framework, using NetEase Cloud Music API to get music data. Music player with basic play, pause, and volume adjustment functions. Playlist can be played randomly, sequentially and cyclically. You can search music and add to playlists.
+Playback information UI component for web player which adaptated to small screens
+UI components on normal screeens</description>
+    </item>
+    <item>
+      <title>React Online Game Platform</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/react-online-game-platform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/react-online-game-platform/</guid>
+      <description>React Online Game Platform # The web application is a game platform created using React and MaterialUI. It allows users to register and create their own game lists. Additionally, it provides a community where users can write reviews, engage in chat conversations with others, and share their opinions. Most importantly, users can search for the games they want to play and access detailed information about them.
+Player&amp;rsquo;s Dashboard
+The detailed personal information page allows users to view their entire game collection, comments, friends, and more.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Thoughts on Implementing Business Logic Splitting in Lists # Redux JSNote
+Introduction # List display elements are commonly used in frontend development for various business scenarios. As an SPA (Single Page Application) grows and the functional requirements increase, splitting an existing list into two halves can sometimes be a challenging task.
+​	As depicted above, the time constraints for this requirement are quite tight. When initially considering this problem, we often tend to split the global list in Redux into two lists using business logic and then present them using the component&rsquo;s local state to achieve the splitting.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Thoughts on Implementing Business Logic Splitting in Lists" />
+<meta property="og:description" content="Thoughts on Implementing Business Logic Splitting in Lists # Redux JSNote
+Introduction # List display elements are commonly used in frontend development for various business scenarios. As an SPA (Single Page Application) grows and the functional requirements increase, splitting an existing list into two halves can sometimes be a challenging task.
+​	As depicted above, the time constraints for this requirement are quite tight. When initially considering this problem, we often tend to split the global list in Redux into two lists using business logic and then present them using the component&rsquo;s local state to achieve the splitting." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cab11918.github.io/hugo-pweb/en/docs/notes/thoughts-on-implementing-business-logic-splitting-in-lists/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Thoughts on Implementing Business Logic Splitting in Lists | Minghao Yu</title>
+<link rel="manifest" href="https://cab11918.github.io/hugo-pweb/manifest.json">
+<link rel="icon" href="https://cab11918.github.io/hugo-pweb/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cab11918.github.io/hugo-pweb/book.min.f8de3645fe00591b41524aee174e19edd98a22255a2930a0cdc82a94835ba387.css" integrity="sha256-&#43;N42Rf4AWRtBUkruF04Z7dmKIiVaKTCgzcgqlINbo4c=" crossorigin="anonymous"><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="https://cab11918.github.io/hugo-pweb/en/"><span>Minghao Yu</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="https://cab11918.github.io/hugo-pweb/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://cab11918.github.io/hugo-pweb/">
+          中文
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/java-animation-editor/" class="">Java Animation Editor</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/java-chinese-chess/" class="">Java Chinese Chess</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/python-game-snarl/" class="">Python Dungeon Game Snarl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/react-music-player/" class="">React Music Player</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/react-online-game-platform/" class="">React Online Game Platform</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Notes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/automatic-report-pagination-using-dom/" class="">Automatic Report Pagination using DOM</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/implementing-scheduled-popup-notifications-using-cookie-caching/" class="">Implementing Scheduled Popup Notifications Using Cookie Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/thoughts-on-implementing-business-logic-splitting-in-lists/" class="active">Thoughts on Implementing Business Logic Splitting in Lists</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Ideas &amp; Artwork</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/book-design/" class="">Book Design</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/coding-poster/" class="">Coding Poster</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/sketch-practice/" class="">Sketch Practice</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/the-12-zodiacs/" class="">The 12 Zodiacs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/type-book/" class="">Type Book</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://cab11918.github.io/hugo-pweb/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Thoughts on Implementing Business Logic Splitting in Lists</strong>
+
+  <label for="toc-control">
+    
+    <img src="https://cab11918.github.io/hugo-pweb/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#thoughts-on-implementing-business-logic-splitting-in-lists"><strong>Thoughts on Implementing Business Logic Splitting in Lists</strong></a>
+      <ul>
+        <li><a href="#introduction"><strong>Introduction</strong></a></li>
+        <li><a href="#implementation-approach"><strong>Implementation Approach</strong></a></li>
+        <li><a href="#technical-challengesissues"><strong>Technical Challenges/Issues</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="thoughts-on-implementing-business-logic-splitting-in-lists">
+  <strong>Thoughts on Implementing Business Logic Splitting in Lists</strong>
+  <a class="anchor" href="#thoughts-on-implementing-business-logic-splitting-in-lists">#</a>
+</h2>
+<p><!-- raw HTML omitted -->Redux<!-- raw HTML omitted --> <!-- raw HTML omitted -->JS<!-- raw HTML omitted --><!-- raw HTML omitted -->Note<!-- raw HTML omitted --></p>
+<h3 id="introduction">
+  <strong>Introduction</strong>
+  <a class="anchor" href="#introduction">#</a>
+</h3>
+<p>List display elements are commonly used in frontend development for various business scenarios. As an SPA (Single Page Application) grows and the functional requirements increase, splitting an existing list into two halves can sometimes be a challenging task.</p>
+<!-- raw HTML omitted -->
+<p>​	As depicted above, the time constraints for this requirement are quite tight. When initially considering this problem, we often tend to split the global list in Redux into two lists using business logic and then present them using the component&rsquo;s local state to achieve the splitting. However, the problem arises when dealing with feature-rich, large-scale applications where each individual element has more than five different functionalities for operations such as create, read, update, and delete. This doesn&rsquo;t even include the interactivity with other elements. Consequently, we would need to add new code for each existing functionality to cater to the current local list.</p>
+<h3 id="implementation-approach">
+  <strong>Implementation Approach</strong>
+  <a class="anchor" href="#implementation-approach">#</a>
+</h3>
+<p>Since our goal is to preserve the existing list in the Redux state without introducing additional global or component-specific states, and to ensure that the existing functionalities can be reused without modifications, we can achieve this by conditionally rendering the original list multiple times.</p>
+<p>Specifically:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">arr1</span> <span style="color:#f92672">-&gt;</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">arr1</span>(<span style="color:#a6e22e">render</span>(<span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span>)) <span style="color:#f92672">-&gt;</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">arr1</span>(<span style="color:#a6e22e">render</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span>)) <span style="color:#f92672">-&gt;</span> [<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>]
+</span></span></code></pre></div><h3 id="technical-challengesissues">
+  <strong>Technical Challenges/Issues</strong>
+  <a class="anchor" href="#technical-challengesissues">#</a>
+</h3>
+<p>While the business logic itself may not be complex, the implementation approach is crucial. Using two filter renderings will inevitably have a performance impact and introduce other potential drawbacks. However, in time-constrained and urgent scenarios, it is a relatively minimal-effort solution. The absence of additional new states also facilitates code maintenance in the future.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#thoughts-on-implementing-business-logic-splitting-in-lists"><strong>Thoughts on Implementing Business Logic Splitting in Lists</strong></a>
+      <ul>
+        <li><a href="#introduction"><strong>Introduction</strong></a></li>
+        <li><a href="#implementation-approach"><strong>Implementation Approach</strong></a></li>
+        <li><a href="#technical-challengesissues"><strong>Technical Challenges/Issues</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

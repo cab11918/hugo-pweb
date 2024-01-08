@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minghao Yu</title>
+    <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/</link>
+    <description>Recent content on Minghao Yu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book Design</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/book-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/book-design/</guid>
+      <description>Book Design # Some Book Design in Capstone Project</description>
+    </item>
+    <item>
+      <title>Coding Poster</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/coding-poster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/coding-poster/</guid>
+      <description>Coding Poster # A little bit passion of coding! ☺️</description>
+    </item>
+    <item>
+      <title>Sketch Practice</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/sketch-practice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/sketch-practice/</guid>
+      <description>Sketch Practice # Some of my previous exercises during my spare time, but my drawing skills are not very good, so I mainly focus on recording them. 😅</description>
+    </item>
+    <item>
+      <title>The 12 Zodiacs</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/the-12-zodiacs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/the-12-zodiacs/</guid>
+      <description>The 12 Zodiacs # A Pixel Art Book with the Theme of the Chinese Zodiac
+Cover Designs for Twelve Stamps
+Typesetting of Stamp Introductions and Historical Background in Certain Sections of the Book</description>
+    </item>
+    <item>
+      <title>Type Book</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/type-book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/type-book/</guid>
+      <description> Type Book # Combining Characters to Convey Meaning
+The differences in characteristics and the arrangement of letters can create aesthetics.
+Cover Index Page Integration of Font Application with Background Font History and Introduction </description>
+    </item>
+  </channel>
+</rss>

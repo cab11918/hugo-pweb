@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" Java Animation Editor # This is a Java project developed in an object-oriented design course. It accepts string inputs and visualizes the code as an interesting animation. It supports features such as exporting to SVG format, slowing down/speeding up the animation, and pausing/starting/replaying the animation.
+The main UI Users can add and remove shapes in the animation and describe their motion paths. (delete successful) Tower of Hanoi Animation Demonstration ">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Java Animation Editor" />
+<meta property="og:description" content=" Java Animation Editor # This is a Java project developed in an object-oriented design course. It accepts string inputs and visualizes the code as an interesting animation. It supports features such as exporting to SVG format, slowing down/speeding up the animation, and pausing/starting/replaying the animation.
+The main UI Users can add and remove shapes in the animation and describe their motion paths. (delete successful) Tower of Hanoi Animation Demonstration " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cab11918.github.io/hugo-pweb/en/docs/projects/java-animation-editor/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Java Animation Editor | Minghao Yu</title>
+<link rel="manifest" href="https://cab11918.github.io/hugo-pweb/manifest.json">
+<link rel="icon" href="https://cab11918.github.io/hugo-pweb/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cab11918.github.io/hugo-pweb/book.min.f8de3645fe00591b41524aee174e19edd98a22255a2930a0cdc82a94835ba387.css" integrity="sha256-&#43;N42Rf4AWRtBUkruF04Z7dmKIiVaKTCgzcgqlINbo4c=" crossorigin="anonymous"><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="https://cab11918.github.io/hugo-pweb/en/"><span>Minghao Yu</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="https://cab11918.github.io/hugo-pweb/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://cab11918.github.io/hugo-pweb/">
+          中文
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/java-animation-editor/" class="active">Java Animation Editor</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/java-chinese-chess/" class="">Java Chinese Chess</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/python-game-snarl/" class="">Python Dungeon Game Snarl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/react-music-player/" class="">React Music Player</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/react-online-game-platform/" class="">React Online Game Platform</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Notes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/automatic-report-pagination-using-dom/" class="">Automatic Report Pagination using DOM</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/implementing-scheduled-popup-notifications-using-cookie-caching/" class="">Implementing Scheduled Popup Notifications Using Cookie Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/thoughts-on-implementing-business-logic-splitting-in-lists/" class="">Thoughts on Implementing Business Logic Splitting in Lists</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Ideas &amp; Artwork</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/book-design/" class="">Book Design</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/coding-poster/" class="">Coding Poster</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/sketch-practice/" class="">Sketch Practice</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/the-12-zodiacs/" class="">The 12 Zodiacs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/type-book/" class="">Type Book</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://cab11918.github.io/hugo-pweb/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Java Animation Editor</strong>
+
+  <label for="toc-control">
+    
+    <img src="https://cab11918.github.io/hugo-pweb/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#java-animation-editor">Java Animation Editor</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="java-animation-editor">
+  Java Animation Editor
+  <a class="anchor" href="#java-animation-editor">#</a>
+</h2>
+<p><em>This is a Java project developed in an object-oriented design course. It accepts string inputs and visualizes the code as an interesting animation. It supports features such as exporting to SVG format, slowing down/speeding up the animation, and pausing/starting/replaying the animation.</em></p>
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <!-- raw HTML omitted -->
+<p><img src="https://cab11918.github.io/hugo-pweb/ani1.png" alt="Example image" />
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- raw HTML omitted -->
+<p><em>The main UI</em>
+  </div>
+
+</div>
+
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <!-- raw HTML omitted -->
+<p><img src="https://cab11918.github.io/hugo-pweb/ani2.png" alt="Example image" />
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- raw HTML omitted -->
+<p><em>Users can add and remove shapes in the animation and describe their motion paths.</em>
+  </div>
+
+</div>
+
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <!-- raw HTML omitted -->
+<p><img src="https://cab11918.github.io/hugo-pweb/ani3.png" alt="Example image" />
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- raw HTML omitted -->
+<p><em>(delete successful)</em>
+  </div>
+
+</div>
+
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <!-- raw HTML omitted -->
+<p><img src="https://cab11918.github.io/hugo-pweb/ani4.png" alt="Example image" />
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- raw HTML omitted -->
+<p><em>Tower of Hanoi Animation Demonstration</em>
+  </div>
+
+</div>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#java-animation-editor">Java Animation Editor</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

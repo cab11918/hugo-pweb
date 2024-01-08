@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Implementing Scheduled Popup Notifications Using Cookie Caching # JS-Cookies MomentJS
+Introduction # In frontend Single-Page Applications (SPAs), there is often a need to collectively and controllably notify users about critical information. In this particular business scenario, for instance, a medical institution may choose not to display relevant information about a person&rsquo;s medical examination until they have signed the necessary agreements. This requires presenting a notification message to each user account within the platform.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Implementing Scheduled Popup Notifications Using Cookie Caching" />
+<meta property="og:description" content="Implementing Scheduled Popup Notifications Using Cookie Caching # JS-Cookies MomentJS
+Introduction # In frontend Single-Page Applications (SPAs), there is often a need to collectively and controllably notify users about critical information. In this particular business scenario, for instance, a medical institution may choose not to display relevant information about a person&rsquo;s medical examination until they have signed the necessary agreements. This requires presenting a notification message to each user account within the platform." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cab11918.github.io/hugo-pweb/en/docs/notes/implementing-scheduled-popup-notifications-using-cookie-caching/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Implementing Scheduled Popup Notifications Using Cookie Caching | Minghao Yu</title>
+<link rel="manifest" href="https://cab11918.github.io/hugo-pweb/manifest.json">
+<link rel="icon" href="https://cab11918.github.io/hugo-pweb/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cab11918.github.io/hugo-pweb/book.min.f8de3645fe00591b41524aee174e19edd98a22255a2930a0cdc82a94835ba387.css" integrity="sha256-&#43;N42Rf4AWRtBUkruF04Z7dmKIiVaKTCgzcgqlINbo4c=" crossorigin="anonymous"><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="https://cab11918.github.io/hugo-pweb/en/"><span>Minghao Yu</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="https://cab11918.github.io/hugo-pweb/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://cab11918.github.io/hugo-pweb/">
+          中文
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/java-animation-editor/" class="">Java Animation Editor</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/java-chinese-chess/" class="">Java Chinese Chess</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/python-game-snarl/" class="">Python Dungeon Game Snarl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/react-music-player/" class="">React Music Player</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/react-online-game-platform/" class="">React Online Game Platform</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Notes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/automatic-report-pagination-using-dom/" class="">Automatic Report Pagination using DOM</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/implementing-scheduled-popup-notifications-using-cookie-caching/" class="active">Implementing Scheduled Popup Notifications Using Cookie Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/thoughts-on-implementing-business-logic-splitting-in-lists/" class="">Thoughts on Implementing Business Logic Splitting in Lists</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Ideas &amp; Artwork</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/book-design/" class="">Book Design</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/coding-poster/" class="">Coding Poster</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/sketch-practice/" class="">Sketch Practice</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/the-12-zodiacs/" class="">The 12 Zodiacs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/type-book/" class="">Type Book</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://cab11918.github.io/hugo-pweb/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Implementing Scheduled Popup Notifications Using Cookie Caching</strong>
+
+  <label for="toc-control">
+    
+    <img src="https://cab11918.github.io/hugo-pweb/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#implementing-scheduled-popup-notifications-using-cookie-caching">Implementing Scheduled Popup Notifications Using Cookie Caching</a>
+      <ul>
+        <li><a href="#introduction"><strong>Introduction</strong></a></li>
+        <li><a href="#implementation-approach"><strong>Implementation Approach</strong></a></li>
+        <li><a href="#technical-challengesissues"><strong>Technical Challenges/Issues</strong></a></li>
+        <li><a href="#reference"><strong>Reference</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="implementing-scheduled-popup-notifications-using-cookie-caching">
+  Implementing Scheduled Popup Notifications Using Cookie Caching
+  <a class="anchor" href="#implementing-scheduled-popup-notifications-using-cookie-caching">#</a>
+</h2>
+<p><!-- raw HTML omitted -->JS-Cookies<!-- raw HTML omitted --> <!-- raw HTML omitted -->MomentJS<!-- raw HTML omitted --></p>
+<h3 id="introduction">
+  <strong>Introduction</strong>
+  <a class="anchor" href="#introduction">#</a>
+</h3>
+<p>In frontend Single-Page Applications (SPAs), there is often a need to collectively and controllably notify users about critical information. In this particular business scenario, for instance, a medical institution may choose not to display relevant information about a person&rsquo;s medical examination until they have signed the necessary agreements. This requires presenting a notification message to each user account within the platform. Additionally, there may be a time limit for displaying this notification, such as not showing it after seven days. Is there a way to fulfill this requirement without relying on backend storage for field information?</p>
+<h3 id="implementation-approach">
+  <strong>Implementation Approach</strong>
+  <a class="anchor" href="#implementation-approach">#</a>
+</h3>
+<p>Firstly, it is essential to establish that the popup notifications are based on the institution, where each account under the institution has a unique ID. Even if different users log in on the same computer, their timers are separate. When a user logs in for the first time on a computer, we can set a cookie for each account using <code>Cookie.set('accountID-date', time)</code> (the time can be generated using dependencies like Moment.js). This way, when we need to display the information or perform other actions, we can simply compare the stored time in the cookie with the current time. This approach reduces the time cost of adding fields in the backend while achieving the desired functionality.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Check if the date corresponding to the ID exists, indicating whether it is the first login. Set a seven-day limit for displaying sensitive information.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Cookie</span>.<span style="color:#a6e22e">get</span>(<span style="color:#a6e22e">accountUuid</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;-date&#39;</span>) <span style="color:#f92672">===</span> <span style="color:#66d9ef">undefined</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Cookie</span>.<span style="color:#a6e22e">set</span>(<span style="color:#a6e22e">accountUuid</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;-date&#39;</span>, <span style="color:#a6e22e">today</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Cookie</span>.<span style="color:#a6e22e">get</span>(<span style="color:#a6e22e">accountUuid</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;-date&#39;</span>), <span style="color:#e6db74">&#39;id-date&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Check if the corresponding ID&#39;s date exists, i.e., whether it is the first login. Set a seven-day limit for displaying sensitive information.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">today</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">moment</span>().<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;YYYY-MM-DD&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">accountUuid</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Cookie</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;cloud-accountUuid&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Cookie</span>.<span style="color:#a6e22e">get</span>(<span style="color:#a6e22e">accountUuid</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;-date&#39;</span>) <span style="color:#f92672">!==</span> <span style="color:#66d9ef">undefined</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dayPassed</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">moment</span>(<span style="color:#a6e22e">today</span>).<span style="color:#a6e22e">diff</span>(<span style="color:#a6e22e">moment</span>(<span style="color:#a6e22e">Cookie</span>.<span style="color:#a6e22e">get</span>(<span style="color:#a6e22e">accountUuid</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;-date&#39;</span>)), <span style="color:#e6db74">&#39;days&#39;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">dayPassed</span>, <span style="color:#e6db74">&#39;daypassed&#39;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">dayPassed</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">6</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setCanceled</span>(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }, [<span style="color:#a6e22e">token</span>]);
+</span></span></code></pre></div><h3 id="technical-challengesissues">
+  <strong>Technical Challenges/Issues</strong>
+  <a class="anchor" href="#technical-challengesissues">#</a>
+</h3>
+<p>Implementing such methods can be challenging when it comes to high-priority and critical notifications. Cookie storage may not work in browsers&rsquo; incognito mode and can be easily manipulated by malicious users. Additionally, once this implementation is deployed, it becomes difficult to maintain or modify. When there are changes in requirements or business logic, a new version needs to be deployed with deprecated timestamps added to the cookies. If this method is extensively used, it can pollute the user&rsquo;s cookie environment and potentially lead to bugs caused by cookie naming conflicts.</p>
+<h3 id="reference">
+  <strong>Reference</strong>
+  <a class="anchor" href="#reference">#</a>
+</h3>
+<p><a href="https://segmentfault.com/a/1190000017329980">你真的了解回流和重绘吗</a></p>
+<p><a href="https://segmentfault.com/q/1010000013551201">document.body.appendChild()会重新渲染整棵DOM树吗</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie#read_all_cookies_accessible_from_this_location">Document.cookie</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#implementing-scheduled-popup-notifications-using-cookie-caching">Implementing Scheduled Popup Notifications Using Cookie Caching</a>
+      <ul>
+        <li><a href="#introduction"><strong>Introduction</strong></a></li>
+        <li><a href="#implementation-approach"><strong>Implementation Approach</strong></a></li>
+        <li><a href="#technical-challengesissues"><strong>Technical Challenges/Issues</strong></a></li>
+        <li><a href="#reference"><strong>Reference</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

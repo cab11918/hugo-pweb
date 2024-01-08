@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minghao Yu</title>
+    <link>https://cab11918.github.io/hugo-pweb/en/docs/notes/</link>
+    <description>Recent content on Minghao Yu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://cab11918.github.io/hugo-pweb/en/docs/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automatic Report Pagination using DOM</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/notes/automatic-report-pagination-using-dom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/notes/automatic-report-pagination-using-dom/</guid>
+      <description>Automatic Report Pagination using DOM # DOM JS Automation
+Introduction # In many cases, frontend developers can use popular frameworks such as React to implement the development of complex reports, such as medical examination reports or medical imaging reports. However, when dealing with user information that is relatively complex and the quantity of information is uncertain, it becomes challenging to determine the amount of content that can be displayed on each page.</description>
+    </item>
+    <item>
+      <title>Implementing Scheduled Popup Notifications Using Cookie Caching</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/notes/implementing-scheduled-popup-notifications-using-cookie-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/notes/implementing-scheduled-popup-notifications-using-cookie-caching/</guid>
+      <description>Implementing Scheduled Popup Notifications Using Cookie Caching # JS-Cookies MomentJS
+Introduction # In frontend Single-Page Applications (SPAs), there is often a need to collectively and controllably notify users about critical information. In this particular business scenario, for instance, a medical institution may choose not to display relevant information about a person&amp;rsquo;s medical examination until they have signed the necessary agreements. This requires presenting a notification message to each user account within the platform.</description>
+    </item>
+    <item>
+      <title>Thoughts on Implementing Business Logic Splitting in Lists</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/notes/thoughts-on-implementing-business-logic-splitting-in-lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/notes/thoughts-on-implementing-business-logic-splitting-in-lists/</guid>
+      <description>Thoughts on Implementing Business Logic Splitting in Lists # Redux JSNote
+Introduction # List display elements are commonly used in frontend development for various business scenarios. As an SPA (Single Page Application) grows and the functional requirements increase, splitting an existing list into two halves can sometimes be a challenging task.
+​	As depicted above, the time constraints for this requirement are quite tight. When initially considering this problem, we often tend to split the global list in Redux into two lists using business logic and then present them using the component&amp;rsquo;s local state to achieve the splitting.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>余名皓</title>
+    <link>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/</link>
+    <description>Recent content on 余名皓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <atom:link href="https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 动画编辑器</title>
+      <link>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/java-%E5%8A%A8%E7%94%BB%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/java-%E5%8A%A8%E7%94%BB%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <description> Java动画编辑器 # 这是一个在面向对象设计课程中开发的Java项目。它接受字符串输入并将代码可视化为有趣的动画。它支持导出SVG格式、减慢/加速动画、暂停/开始/重新播放动画等功能
+播放器的主界面 用户可以删除和增加动画中的形状并描述它们的运动轨迹 （删除成功） 河内塔动画演示 </description>
+    </item>
+    <item>
+      <title>Java 中国象棋</title>
+      <link>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/java-%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/java-%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B/</guid>
+      <description>Java 中国象棋 # Java游戏是在完成面向对象设计课程后开发的。这是一个供两个玩家对战的游戏，应用了中国古代象棋的所有规则。计划在未来的版本中加入玩家对抗人工智能的功能。</description>
+    </item>
+    <item>
+      <title>Python 地下城游戏 Snarl</title>
+      <link>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/python%E5%9C%B0%E4%B8%8B%E5%9F%8E%E6%B8%B8%E6%88%8F-snarl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/python%E5%9C%B0%E4%B8%8B%E5%9F%8E%E6%B8%B8%E6%88%8F-snarl/</guid>
+      <description>Python 地下城游戏 Snarl # 使用Python开发的2D多人在线游戏，前端框架使用PyGame。联机方面使用TCP socket实现客户端与服务器 的通信，调用多线程分开处理与服务器的通信和GUI用户界面。玩家需要在不同的图找到通往下一层的钥匙。 游戏中的怪物AI通过广度搜索找到玩家并尝试将其杀死。</description>
+    </item>
+    <item>
+      <title>React 音乐播放器</title>
+      <link>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/react-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/react-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</guid>
+      <description>React 音乐播放器 # 基于React JS框架开发的Web App，使用网易云音乐API获取音乐数据。音乐播放器具有基本播放，暂停，音 量调节功能。播放列表可以随机，顺序，循环播放。可以进行音乐搜索以及添加至播放列表。
+播放器适配小屏幕的播放信息UI组件
+播放器在正常大小的整体UI界面</description>
+    </item>
+    <item>
+      <title>React 在线游戏平台</title>
+      <link>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/react-%E5%9C%A8%E7%BA%BF%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/react-%E5%9C%A8%E7%BA%BF%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/</guid>
+      <description>React 在线游戏平台 # 这个Web应用是一个使用React和MaterialUI制作的游戏平台，允许用户注册并创建自己的游戏列表。它还提供了一个社区，让用户可以撰写评论并与其他人进行聊天，分享自己的观点。最重要的是，用户可以搜索他们想玩的游戏并了解有关它们的详细信息。
+玩家的个人主页
+个人信息详细页，可以查看所有收藏的游戏，评论，朋友&amp;hellip;
+游戏相关描述及标签
+评论功能
+通过游戏相关API提供的搜索功能</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/text-to-3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/docs/%E9%A1%B9%E7%9B%AE/text-to-3d/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

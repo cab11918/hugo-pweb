@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About Me on Minghao Yu</title>
+    <link>https://cab11918.github.io/hugo-pweb/en/</link>
+    <description>Recent content in About Me on Minghao Yu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://cab11918.github.io/hugo-pweb/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automatic Report Pagination using DOM</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/notes/automatic-report-pagination-using-dom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/notes/automatic-report-pagination-using-dom/</guid>
+      <description>Automatic Report Pagination using DOM # DOM JS Automation
+Introduction # In many cases, frontend developers can use popular frameworks such as React to implement the development of complex reports, such as medical examination reports or medical imaging reports. However, when dealing with user information that is relatively complex and the quantity of information is uncertain, it becomes challenging to determine the amount of content that can be displayed on each page.</description>
+    </item>
+    <item>
+      <title>Book Design</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/book-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/book-design/</guid>
+      <description>Book Design # Some Book Design in Capstone Project</description>
+    </item>
+    <item>
+      <title>Coding Poster</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/coding-poster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/coding-poster/</guid>
+      <description>Coding Poster # A little bit passion of coding! ☺️</description>
+    </item>
+    <item>
+      <title>Implementing Scheduled Popup Notifications Using Cookie Caching</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/notes/implementing-scheduled-popup-notifications-using-cookie-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/notes/implementing-scheduled-popup-notifications-using-cookie-caching/</guid>
+      <description>Implementing Scheduled Popup Notifications Using Cookie Caching # JS-Cookies MomentJS
+Introduction # In frontend Single-Page Applications (SPAs), there is often a need to collectively and controllably notify users about critical information. In this particular business scenario, for instance, a medical institution may choose not to display relevant information about a person&amp;rsquo;s medical examination until they have signed the necessary agreements. This requires presenting a notification message to each user account within the platform.</description>
+    </item>
+    <item>
+      <title>Java Animation Editor</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/java-animation-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/java-animation-editor/</guid>
+      <description> Java Animation Editor # This is a Java project developed in an object-oriented design course. It accepts string inputs and visualizes the code as an interesting animation. It supports features such as exporting to SVG format, slowing down/speeding up the animation, and pausing/starting/replaying the animation.
+The main UI Users can add and remove shapes in the animation and describe their motion paths. (delete successful) Tower of Hanoi Animation Demonstration </description>
+    </item>
+    <item>
+      <title>Java Chinese Chess</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/java-chinese-chess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/java-chinese-chess/</guid>
+      <description>Java Chinese Chess # The Java game was developed after completing the object-oriented design course. It is a two-player game that applies all the rules of traditional Chinese chess. There are plans to add a player-versus-artificial intelligence feature in future versions.</description>
+    </item>
+    <item>
+      <title>Python Dungeon Game Snarl</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/python-game-snarl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/python-game-snarl/</guid>
+      <description>Python Dungeon Game Snarl # This is a 2D multiplayer online game developed using Python, with PyGame as the frontend framework. The game incorporates TCP sockets for communication between the client and server for the online functionality. The game architecture utilizes multiple threads to handle communication with the server separately from the GUI user interface. In the game, players are tasked with finding keys in different levels to progress to the next level.</description>
+    </item>
+    <item>
+      <title>React Music Player</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/react-music-player/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/react-music-player/</guid>
+      <description>React Music Player # Web App developed based on React JS framework, using NetEase Cloud Music API to get music data. Music player with basic play, pause, and volume adjustment functions. Playlist can be played randomly, sequentially and cyclically. You can search music and add to playlists.
+Playback information UI component for web player which adaptated to small screens
+UI components on normal screeens</description>
+    </item>
+    <item>
+      <title>React Online Game Platform</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/projects/react-online-game-platform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/projects/react-online-game-platform/</guid>
+      <description>React Online Game Platform # The web application is a game platform created using React and MaterialUI. It allows users to register and create their own game lists. Additionally, it provides a community where users can write reviews, engage in chat conversations with others, and share their opinions. Most importantly, users can search for the games they want to play and access detailed information about them.
+Player&amp;rsquo;s Dashboard
+The detailed personal information page allows users to view their entire game collection, comments, friends, and more.</description>
+    </item>
+    <item>
+      <title>Sketch Practice</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/sketch-practice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/sketch-practice/</guid>
+      <description>Sketch Practice # Some of my previous exercises during my spare time, but my drawing skills are not very good, so I mainly focus on recording them. 😅</description>
+    </item>
+    <item>
+      <title>The 12 Zodiacs</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/the-12-zodiacs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/the-12-zodiacs/</guid>
+      <description>The 12 Zodiacs # A Pixel Art Book with the Theme of the Chinese Zodiac
+Cover Designs for Twelve Stamps
+Typesetting of Stamp Introductions and Historical Background in Certain Sections of the Book</description>
+    </item>
+    <item>
+      <title>Thoughts on Implementing Business Logic Splitting in Lists</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/notes/thoughts-on-implementing-business-logic-splitting-in-lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/notes/thoughts-on-implementing-business-logic-splitting-in-lists/</guid>
+      <description>Thoughts on Implementing Business Logic Splitting in Lists # Redux JSNote
+Introduction # List display elements are commonly used in frontend development for various business scenarios. As an SPA (Single Page Application) grows and the functional requirements increase, splitting an existing list into two halves can sometimes be a challenging task.
+​	As depicted above, the time constraints for this requirement are quite tight. When initially considering this problem, we often tend to split the global list in Redux into two lists using business logic and then present them using the component&amp;rsquo;s local state to achieve the splitting.</description>
+    </item>
+    <item>
+      <title>Type Book</title>
+      <link>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/type-book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/type-book/</guid>
+      <description> Type Book # Combining Characters to Convey Meaning
+The differences in characteristics and the arrangement of letters can create aesthetics.
+Cover Index Page Integration of Font Application with Background Font History and Introduction </description>
+    </item>
+  </channel>
+</rss>

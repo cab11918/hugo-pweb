@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Automatic Report Pagination using DOM # DOM JS Automation
+Introduction # In many cases, frontend developers can use popular frameworks such as React to implement the development of complex reports, such as medical examination reports or medical imaging reports. However, when dealing with user information that is relatively complex and the quantity of information is uncertain, it becomes challenging to determine the amount of content that can be displayed on each page.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Automatic Report Pagination using DOM" />
+<meta property="og:description" content="Automatic Report Pagination using DOM # DOM JS Automation
+Introduction # In many cases, frontend developers can use popular frameworks such as React to implement the development of complex reports, such as medical examination reports or medical imaging reports. However, when dealing with user information that is relatively complex and the quantity of information is uncertain, it becomes challenging to determine the amount of content that can be displayed on each page." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cab11918.github.io/hugo-pweb/en/docs/notes/automatic-report-pagination-using-dom/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Automatic Report Pagination using DOM | Minghao Yu</title>
+<link rel="manifest" href="https://cab11918.github.io/hugo-pweb/manifest.json">
+<link rel="icon" href="https://cab11918.github.io/hugo-pweb/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cab11918.github.io/hugo-pweb/book.min.f8de3645fe00591b41524aee174e19edd98a22255a2930a0cdc82a94835ba387.css" integrity="sha256-&#43;N42Rf4AWRtBUkruF04Z7dmKIiVaKTCgzcgqlINbo4c=" crossorigin="anonymous"><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="https://cab11918.github.io/hugo-pweb/en/"><span>Minghao Yu</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="https://cab11918.github.io/hugo-pweb/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://cab11918.github.io/hugo-pweb/">
+          中文
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/java-animation-editor/" class="">Java Animation Editor</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/java-chinese-chess/" class="">Java Chinese Chess</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/python-game-snarl/" class="">Python Dungeon Game Snarl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/react-music-player/" class="">React Music Player</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/projects/react-online-game-platform/" class="">React Online Game Platform</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Notes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/automatic-report-pagination-using-dom/" class="active">Automatic Report Pagination using DOM</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/implementing-scheduled-popup-notifications-using-cookie-caching/" class="">Implementing Scheduled Popup Notifications Using Cookie Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/notes/thoughts-on-implementing-business-logic-splitting-in-lists/" class="">Thoughts on Implementing Business Logic Splitting in Lists</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Ideas &amp; Artwork</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/book-design/" class="">Book Design</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/coding-poster/" class="">Coding Poster</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/sketch-practice/" class="">Sketch Practice</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/the-12-zodiacs/" class="">The 12 Zodiacs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cab11918.github.io/hugo-pweb/en/docs/ideas-artwork/type-book/" class="">Type Book</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://cab11918.github.io/hugo-pweb/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Automatic Report Pagination using DOM</strong>
+
+  <label for="toc-control">
+    
+    <img src="https://cab11918.github.io/hugo-pweb/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#automatic-report-pagination-using-dom"><strong>Automatic Report Pagination using DOM</strong></a></li>
+        <li><a href="#introduction"><strong>Introduction</strong></a></li>
+        <li><a href="#implementation-approach"><strong>Implementation Approach</strong></a></li>
+        <li><a href="#technical-challengesissues"><strong>Technical Challenges/Issues</strong></a></li>
+        <li><a href="#reference">Reference</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h3 id="automatic-report-pagination-using-dom">
+  <strong>Automatic Report Pagination using DOM</strong>
+  <a class="anchor" href="#automatic-report-pagination-using-dom">#</a>
+</h3>
+<p><!-- raw HTML omitted -->DOM<!-- raw HTML omitted --> <!-- raw HTML omitted -->JS<!-- raw HTML omitted --> <!-- raw HTML omitted -->Automation<!-- raw HTML omitted --></p>
+<h3 id="introduction">
+  <strong>Introduction</strong>
+  <a class="anchor" href="#introduction">#</a>
+</h3>
+<p>In many cases, frontend developers can use popular frameworks such as React to implement the development of complex reports, such as medical examination reports or medical imaging reports. However, when dealing with user information that is relatively complex and the quantity of information is uncertain, it becomes challenging to determine the amount of content that can be displayed on each page. For example, a patient with a lung disease may have only two suspicious lesions in a CT image, or there could be more than 20. The style of the report is also uncertain and may require modifications due to business reasons. These modifications may involve changes to text, images, spacing, and other elements.</p>
+<h3 id="implementation-approach">
+  <strong>Implementation Approach</strong>
+  <a class="anchor" href="#implementation-approach">#</a>
+</h3>
+<p>Since the source of information such as text and images usually comes from data returned by backend APIs, calculating and implementing grouping based on the quantity of text or images using JavaScript methods may not be accurate. Factors such as variations in text length due to different languages and styles, as well as the presence of image shadows and adaptive scaling, make it challenging to determine a fixed layout solely based on text or image count. However, if we can obtain the accurate width and height of these elements within the text flow, the problem can be resolved.</p>
+<p>The methods <code>document.createElement</code>, <code>document.body.appendChild</code>, and <code>document.body.removeChild</code> can conveniently help us solve this problem. By creating a new element in the DOM, getting its height, and then removing the element, we can obtain the required information without adding any extra elements to the page before rendering is complete.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// To determine the height occupied by the preflight text in the current format, we can set the necessary styles in advance for the simulated new element, &#34;a,&#34; to ensure the accuracy of the measured property (height).
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">preFlight</span>(<span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;div&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">text</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;793px&#39;</span>
+</span></span><span style="display:flex;"><span>  document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">a</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">temp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">offsetHeight</span>
+</span></span><span style="display:flex;"><span>  document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>(<span style="color:#a6e22e">a</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">temp</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="technical-challengesissues">
+  <strong>Technical Challenges/Issues</strong>
+  <a class="anchor" href="#technical-challengesissues">#</a>
+</h3>
+<p>Considering that this implementation method does involve constructing a subtree outside of the current DOM based on existing data, this pagination approach can potentially impact performance, especially when dealing with a large amount of information.</p>
+<h3 id="reference">
+  Reference
+  <a class="anchor" href="#reference">#</a>
+</h3>
+<p><a href="https://segmentfault.com/a/1190000017329980">你真的了解回流和重绘吗</a></p>
+<p><a href="https://segmentfault.com/q/1010000013551201">document.body.appendChild()会重新渲染整棵DOM树吗</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#automatic-report-pagination-using-dom"><strong>Automatic Report Pagination using DOM</strong></a></li>
+        <li><a href="#introduction"><strong>Introduction</strong></a></li>
+        <li><a href="#implementation-approach"><strong>Implementation Approach</strong></a></li>
+        <li><a href="#technical-challengesissues"><strong>Technical Challenges/Issues</strong></a></li>
+        <li><a href="#reference">Reference</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

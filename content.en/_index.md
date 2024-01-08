@@ -7,7 +7,7 @@ type: docs
 
 ---
 
-Programmer 🧑‍💻 | Technology Enthusiast | Passionate about Graphic Design | Gaming | Cow Cats | Various quirky and interesting ideas 💡...
+Programmer 🧑‍💻 | Technology Enthusiast | Passionate about Graphic Design | Gaming | Various quirky and interesting ideas 💡...
 
 I'm interested in human-computer interaction and front-end development. I enjoy exploring the changes and experiences that cutting-edge technology brings. In my free time, I like browsing forums like ArtStation and Pinterest to discover various artworks and ideas. I have a simple and easy-going approach to dealing with people.
 
