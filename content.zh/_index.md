@@ -45,7 +45,7 @@ type: docs
 
 + [**AI文字-3D建模创作平台**]({{< relref "/docs/项目/AI3D建模平台.md" >}})
   
-  基
+  为客户公司Jinolo制作的一款AI应用,在谷歌云部署了两款模型Shap‑E,DreamFusion使用用户的文字/图片输入生成3D模型并保存到库中, 后端生成任务由Python,Flash API 及Celery实现（生成队列，对模型脚本的调用，和进度查询等服务）, 实现了用户免登录访问平台搜索,查看AI和其他内容创作者的3D模型, 并可以合法下载有关资源
 
 + [**React 音乐播放器**]({{< relref "/docs/项目/React 音乐播放器.md" >}})
   
